@@ -1,0 +1,83 @@
+<!--May Alqurashi 2008060-->
+<!--Fatma Alamri 2006659-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	<title> Contact Us </title>
+    <link rel="stylesheet" href="./cssFiles/index.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nova+Square">
+    
+    <script src = "./jsFiles/formJavascript.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <header>
+    <div><h1>Future Developers</h1></div>
+    </header>
+
+    <div><nav>
+        <a href="/website/htmlFiles/welcome.html">Home</a>
+        <a href="/website/htmlFiles/subscribe.html">Subscribe</a> 
+        <a href="/website/htmlFiles/about-us.html">About Us</a>
+        <a href="index.html">Contact Us</a>
+      </nav></div>
+      
+    <div id="formFrame">
+    <form  method="post" action="/server" id='myform' name='myform'>
+      
+     <p><label>First Name:
+        <input type="text" name ="fname" id="fname"  size="25" placeholder=" First Name">
+     </label></p>
+
+     <p><label>Last name:
+        <input type="text" name ="lname" id="lname"  size="25" placeholder=" Last Name">
+     </label></p>
+
+     <p><label >Mobile:</label>
+        <input id="mobile" type='tel' name="mobile" value="" placeholder=" E.g.,554875693" pattern="[0-9]{9}" minlength="9" 
+        maxlength="9"></p>
+
+    <p><label>Gender: </label>
+    <label class="gen">Male 
+        <input name="gender" type="radio" value="male">
+    </label>
+    
+    <label class="gen">Female 
+        <input name="gender" type="radio" value="female">
+    </label>
+    </p>
+    
+    <p><label>Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth"></p>
+
+    <p><label>Email:
+        <input type="email" id="email" name="email" placeholder="name@example.com">
+    </label></p>
+
+    <p><label>Language of Communication:</label>
+        <select name="language">
+            <option selected>English</option>
+            <option>Arabic</option>
+            <option>French</option>
+        </select>
+
+    <p><label>Comments: <br>
+        <textarea name ="comments" id="comments"
+            rows ="4" cols="36" placeholder=" Enter comments here."></textarea>
+            </label></p>
+
+    <p>
+    <input type="submit" id="submit" name="submit" value = "Submit">
+    <input type="reset" id="reset" name="reset" value = "Clear">
+    </p>
+    
+    </form>
+    </div> 
+     
+      <footer><p>Copyright &copy; 2023 (May Alqurashi, Fatma Alamri) ALL RIGHTS RESERVED.</p></footer>
+
+  </body>
+</html>
